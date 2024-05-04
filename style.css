@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("./cool-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.weather{
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.weather > div{
+    margin: .6rem;
+}
+
+.weather1{
+    font-size: 4rem;
+}
+
+.weather3 span{
+    padding-left: .6rem;
+}
+
+.weather p{
+    font-size: 2rem;
+}
+
+nav{
+    position: absolute;
+    bottom: 0%;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(67, 32, 32, 0.075);
+    box-shadow: 0 0 10px rgb(16, 8, 8);
+    border-radius: 100px 100px 0 0;
+}
+
+nav form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.searchField{
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background-color: transparent;
+    padding: 1rem 0;
+    border-bottom: 2px solid whitesmoke;
+    width: 98%;
+}
+
+nav form button{
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: aliceblue;
+    border-radius: 2rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+
+
